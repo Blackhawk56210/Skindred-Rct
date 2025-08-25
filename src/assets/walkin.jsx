@@ -14,7 +14,10 @@ function Walkin() {
         aria-hidden="true"
       />
       {/* Overlay for darkening the background if needed */}
-      <div className="absolute inset-0 bg-black/60 z-0" aria-hidden="true"></div>
+      <div
+        className="absolute inset-0 bg-black/60 z-0"
+        aria-hidden="true"
+      ></div>
       {/* Main content above background */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-5 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -30,16 +33,16 @@ function Walkin() {
           <div className="space-y-8">
             <div className="bg-red-600 rounded-lg p-8 text-center">
               <h3 className="text-3xl font-bold text-white mb-2">
-                This Wednesday Only
+                Wednesday Walk-in
               </h3>
               <p className="text-white text-lg mb-4">
                 Flash tattoos starting at $50
               </p>
               <div className="text-6xl font-bold text-white mb-4">
-                50% OFF
+                Anything you want
               </div>
               <p className="text-white">
-                All walk-in designs
+                ( Within sizeable reason please call or contact if unsure )
               </p>
             </div>
 
@@ -49,22 +52,20 @@ function Walkin() {
               </h4>
               <ul className="space-y-2 text-neutral-300">
                 <li className="flex items-start">
-                  <span className="text-red-600 mr-2">
-                    •
-                  </span>
-                  <span>Arrive between 11AM - 7PM</span>
+                  <span className="text-red-600 mr-2">•</span>
+                  <span>Arrive between 10AM - 7PM</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-600 mr-2">
-                    •
-                  </span>
+                  <span className="text-red-600 mr-2">•</span>
                   <span>Same-day ink guaranteed</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-600 mr-2">
-                    •
-                  </span>
+                  <span className="text-red-600 mr-2">•</span>
                   <span>Bring valid ID</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-600 mr-2">•</span>
+                  <span>Bring Cash $$$ there is an ATM on-site</span>
                 </li>
               </ul>
             </div>

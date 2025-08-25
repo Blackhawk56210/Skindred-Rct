@@ -92,7 +92,7 @@ function Store() {
               className="text-xl font-bold text-red-600 mb-2"
               id="el-3g20avhx"
             >
-              Hoodie Collection
+              Hat Collection
             </h3>
             <p className="text-white mb-4" id="el-cm9asmnn">
               Limited edition artist collab hoodies
@@ -102,7 +102,7 @@ function Store() {
                 className="text-2xl font-bold text-red-600"
                 id="el-hztp7vob"
               >
-                $65
+                $35
               </span>
               <button
                 className="bg-neutral-900 text-white px-4 py-2 rounded-md hover:bg-neutral-800 cursor-pointer transition-colors duration-200"

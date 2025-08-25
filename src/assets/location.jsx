@@ -2,33 +2,27 @@ import React from "react";
 
 function Location() {
   return (
-    <div>
-      {/* add google map iframe from stack overflow 
-        https://stackoverflow.com/questions/66181746/how-to-embed-an-exact-place-on-google-maps-in-reactjs
-        */}
-      <div class="bg-neutral-800 rounded-lg p-8">
-        <h3 class="text-2xl font-bold text-white mb-4">Visit Us</h3>
-        <div class="space-y-4 text-neutral-300">
-          <div>
-            <p class="font-semibold text-white">Studio Address</p>
-            <p>
-              123 Tattoo Alley
-              <br />
-              New York, NY 10001
-            </p>
-          </div>
-          <div>
-            <p class="font-semibold text-white">Hours</p>
-            <p>
-              Mon-Sat: 11AM - 8PM
-              <br />
-              Sun: 12PM - 6PM
-            </p>
-          </div>
-          <div>
-            <p class="font-semibold text-white">Phone</p>
-            <p>(555) 123-4567</p>
-          </div>
+    <div className="bg-neutral-800 p-8 flex flex-col items-center text-center" data-editable="true">
+      <h3 className="text-2xl font-bold text-white mb-4">Visit Us</h3>
+      <div className="space-y-4 text-neutral-300">
+        <div>
+          <p className="font-semibold text-white">Shop Address</p>
+          <p>
+            488 US-90<br />
+            DeFuniak Springs, FL 32433
+          </p>
+        </div>
+        <div>
+          <p className="font-semibold text-white">Hours</p>
+          <p>
+            Tues-Fri: 10am-7pm<br />
+            Sat: 11am-7pm<br />
+            Sun-Mon: CLOSED
+          </p>
+        </div>
+        <div>
+          <p className="font-semibold text-white">Phone</p>
+          <p>(850)-951-0609</p>
         </div>
       </div>
     </div>

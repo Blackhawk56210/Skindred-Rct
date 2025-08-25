@@ -41,7 +41,7 @@ function Frontpage() {
             Book Appointment
           </a>
           <a
-            href="#contact"
+            href="#artists"
             className="bg-white text-neutral-900 px-8 py-4 font-semibold hover:bg-neutral-200 transition-colors"
             id="el-vl6nj493"
             target="_self"

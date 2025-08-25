@@ -6,74 +6,68 @@ import Mitch from "./images/tatoo-img/Mitch/mitch profile.jpg";
 function Artists() {
   return (
     <div>
-      <section id="artists" class="py-20 px-4 bg-neutral-50">
-        <div class="max-w-7xl mx-auto" id="el-ajx4200e">
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center mb-16 text-neutral-900"
-            id="el-pvzg9x01"
-          >
+      <section id="artists" className="py-20 px-4 bg-gray-700">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
             Artists
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="el-22zpte1s">
+          <div className="grid grid-cols-1 md:grid-cols-3 bg-gray-700 gap-8">
             <div
-              class="bg-white rounded-lg overflow-hidden border border-neutral-200"
-              id="el-vji0gl2f"
+              className="bg-white rounded-lg overflow-hidden border border-neutral-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               <img
                 src={Gabe}
-                className="w-full h-80 object-cover active-edit-image"
-                id="el-v2bx4vzv"
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                alt="Gabe"
               />
-              <div class="p-6" id="el-486ho8mx">
-                <h3 class="text-2xl font-bold mb-2" id="el-gok8ll5l">
-                  Alex Rivera
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">
+                  Gabe
                 </h3>
-                <p class="text-neutral-600 mb-4" id="el-xoe9wf3o">
+                <p className="text-neutral-600 mb-4">
                   Traditional &amp; Neo-Traditional
                 </p>
-                <p class="text-sm text-neutral-500" id="el-7v8dqu8c">
-                  10+ years specializing in bold lines and vibrant colors
+                <p className="text-sm text-neutral-500">
+                  30+ years specializing in bold lines and vibrant colors
                 </p>
               </div>
             </div>
             <div
-              class="bg-white rounded-lg overflow-hidden border border-neutral-200"
-              id="el-wh8ryri9"
+              className="bg-white rounded-lg overflow-hidden border border-neutral-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               <img
                 src={Alex}
-                className="w-full h-80 object-cover"
-                id="el-zu0aa11x"
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                alt="Alex"
               />
-              <div class="p-6" id="el-uuraz9sp">
-                <h3 class="text-2xl font-bold mb-2" id="el-h78nfp5b">
-                  Maya Chen
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">
+                  Alex
                 </h3>
-                <p class="text-neutral-600 mb-4" id="el-zabnc8c8">
+                <p className="text-neutral-600 mb-4">
                   Blackwork &amp; Realism
                 </p>
-                <p class="text-sm text-neutral-500" id="el-dl2ign6q">
+                <p className="text-sm text-neutral-500">
                   Award-winning artist focused on intricate details and shadows
                 </p>
               </div>
             </div>
             <div
-              class="bg-white rounded-lg overflow-hidden border border-neutral-200"
-              id="el-s8d7x105"
+              className="bg-white rounded-lg overflow-hidden border border-neutral-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               <img
                 src={Mitch}
-                className="w-full h-80 object-cover"
-                id="el-8xn0v9ah"
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                alt="Mitch"
               />
-              <div class="p-6" id="el-l8te11p8">
-                <h3 class="text-2xl font-bold mb-2" id="el-co48b4z8">
-                  Jordan Lee
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">
+                  Mitch
                 </h3>
-                <p class="text-neutral-600 mb-4" id="el-yjjjysry">
+                <p className="text-neutral-600 mb-4">
                   Watercolor &amp; Fine Line
                 </p>
-                <p class="text-sm text-neutral-500" id="el-80kujii5">
+                <p className="text-sm text-neutral-500">
                   Master of delicate designs and flowing watercolor techniques
                 </p>
               </div>

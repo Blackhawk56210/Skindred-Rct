@@ -1,6 +1,6 @@
 import placeholder1 from "./images/misc/misc.jpg";
-import placeholder2 from "./images/tatoo-img/Mitch/mitch sleeve.jpg";
-import placeholder3 from "./images/tatoo-img/Alex/alex eminem.jpg";
+import placeholder2 from "./images/tattoo-img/Mitch/mitch sleeve.jpg";
+import placeholder3 from "./images/tattoo-img/Alex/alex eminem.jpg";
 
 function Contact() {
   return (

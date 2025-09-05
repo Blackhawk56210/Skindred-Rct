@@ -1,9 +1,30 @@
-import React from "react";
-import Alex from "./images/tatoo-img/Alex/alex profile.jpg";
-import Gabe from "./images/tatoo-img/Gabe/Gabe profile image.jpg";
-import Mitch from "./images/tatoo-img/Mitch/mitch profile.jpg";
+import Card from "./Card.jsx";
+import Alex from "./images/tattoo-img/Alex/alex-profile.jpg";
+import Gabe from "./images/tattoo-img/Gabe/Gabe-profile-image.jpg";
+import Mitch from "./images/tattoo-img/Mitch/mitch-profile.jpg";
 
 function Artists() {
+  const artists = [
+    {
+      name: "Gabe",
+      image: Gabe,
+      style: "Traditional & Neo-Traditional",
+      bio: "30+ years specializing in bold lines and vibrant colors",
+    },
+    {
+      name: "Mitch",
+      image: Mitch,
+      style: "Blackwork & Realism",
+      bio: "Award-winning artist focused on intricate details and shadows",
+    },
+    {
+      name: "Alex",
+      image: Alex,
+      style: "Watercolor & Fine Line",
+      bio: "Master of delicate designs and flowing watercolor techniques",
+    },
+  ];
+
   return (
     <div>
       <section id="artists" className="py-20 px-4 bg-gray-700">
@@ -12,7 +33,27 @@ function Artists() {
             Artists
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 bg-gray-700 gap-8">
-            <div
+            {artists.map((artist, index) => (
+              <div key={index}>
+                <Card
+                  image={artist.image}
+                  name={artist.name}
+                  style={artist.style}
+                  bio={artist.bio}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Artists;
+
+{
+  /* <div
               className="bg-white rounded-lg overflow-hidden border border-neutral-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               <img
@@ -70,13 +111,5 @@ function Artists() {
                 <p className="text-sm text-neutral-500">
                   Master of delicate designs and flowing watercolor techniques
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+              </div> */
 }
-
-export default Artists;

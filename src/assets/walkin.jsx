@@ -1,5 +1,5 @@
 import React from "react";
-import placeholder1 from "./images/tatoo-img/Alex/alex back.jpg";
+import placeholder1 from "./images/tattoo-img/Alex/alex back.jpg";
 import placeholder2 from "./images/misc/walk-in.jpg";
 
 function Walkin() {

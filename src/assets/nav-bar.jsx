@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import Skindred from "./images/misc/Skindred Logo.png";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header
       id="header"
@@ -63,7 +66,10 @@ function Navbar() {
               Contact
             </a>
           </div>
-          <button id="mobile-menu-btn" className="md:hidden text-neutral-300 h-full" style={{ height: "100%" }}>
+          <button id="mobile-menu-btn" 
+          className="md:hidden text-neutral-300 h-full" 
+          style={{ height: "100%" }}
+          onClick={() => setMenuOpen((open) => !open)}>
             <svg
               className="w-4 h-4"
               fill="none"
@@ -82,59 +88,59 @@ function Navbar() {
           </button>
         </div>
       </nav>
-      <div
-        id="mobile-menu"
-        className="hidden md:hidden bg-neutral-900 border-t border-neutral-800"
-        style={{ minHeight: "75px" }}
-      >
-        <div className="px-4 py-0 space-y-2" id="el-coic96e3">
-          <a
-            href="#home"
-            className="block py-0 text-neutral-300 hover:text-white transition-colors text-sm"
-            id="el-oux5zfpl"
-            target="_self"
-            style={{ lineHeight: "75px" }}
-          >
-            Home
-          </a>
-          <a
-            href="#home"
-            className="block py-0 text-neutral-300 hover:text-white transition-colors text-sm"
-            id="el-30w0rl8e"
-            target="_self"
-            style={{ lineHeight: "75px" }}
-          >
-            Artists
-          </a>
-          <a
-            href="#home"
-            className="block py-0 text-neutral-300 hover:text-white transition-colors text-sm"
-            id="el-q1jduk2t"
-            target="_self"
-            style={{ lineHeight: "75px" }}
-          >
-            Walk-In Wednesday
-          </a>
-          <a
-            href="#home"
-            className="block py-0 text-neutral-300 hover:text-white transition-colors text-sm"
-            id="el-r54x6zo4"
-            target="_self"
-            style={{ lineHeight: "75px" }}
-          >
-            Shop
-          </a>
-          <a
-            href="#home"
-            className="block py-0 text-neutral-300 hover:text-white transition-colors text-sm"
-            id="el-0pitlsgi"
-            target="_self"
-            style={{ lineHeight: "75px" }}
-          >
-            Contact
-          </a>
+      
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-black border-t px-4 pb-4 absolute left-0 right-0 top-18 z-40">
+          <div className="flex flex-col gap-4 text-lg">
+            <a
+              href="#home"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              id="el-5ejso3sj"
+              target="_self"
+              style={{ lineHeight: "75px" }}
+            >
+              Home
+            </a>
+            <a
+              href="#home"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              id="el-vbqvzi59"
+              target="_self"
+              style={{ lineHeight: "75px" }}
+            >
+              Artists
+            </a>
+            <a
+              href="#home"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              id="el-nuzlo6oi"
+              target="_self"
+              style={{ lineHeight: "75px" }}
+            >
+              Walk-In Wednesday
+            </a>
+            <a
+              href="#home"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              id="el-98rpgmc6"
+              target="_self"
+              style={{ lineHeight: "75px" }}
+            >
+              Shop
+            </a>
+            <a
+              href="#home"
+              className="text-neutral-300 hover:text-white transition-colors text-sm"
+              id="el-rhd4ezcv"
+              target="_self"
+              style={{ lineHeight: "75px" }}
+            >
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
